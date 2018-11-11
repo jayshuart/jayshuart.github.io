@@ -166,6 +166,15 @@
                         <p>
                             A stealth game all about light. As a shadow-person your body can't handle the light and you not only are hurt, but lose mass in the light. Players must avoid the light, the Bright Guards, and escape with your life intact. Stick to the shadows as much as possible.  
                         </p>
+                        <p>
+                            This project I worked primarily on gameplay programming for a couple of our different lights, and designed the UI for the main menu as well as HUD. I designed two kinds of lights to give variation to one of the main problems to solve in the game: moving around whilst not getting hurt by light. The first only is a search light that projects a beam, I designed it so that is essentially a moveable wall of light. The searchlight projects a beam but the light itself can be turned by the player to both move out of the players way, as well as be used to illuminate parts of the maps. The other type I created was a light that "flickers: between on and off for set time intervals. This allows players to get a feel for the space fo the map but also create holes to pass through and not be harmed, while still providing a challenge. 
+                        </p>
+                        <p>
+                            The main menu was simple enough, a fun logo and three buttons (Play, credits, and quit). The ingame HUD as well as responsive effects are more interesting. The HUD is simple overall but designed keenly. The HUD is a white bar across the bottom of the screen, cut into a few sections- this is the health bar. Players have the ability to emit light themselves, while this is helpful for brightening surroundings it still hurts the players, because of this health was made to be regenerative. The issue was that players would abuse this because health would always come back, and they didn't worry about going into light too often because of that same reason. To put fear back into light and wary into the players- while still allowing players to use the tools at their disposal I made health sectioned. This made it so health would regenerate up to a point (the top of each section), but if they abused their abilities of found themselves in the light they would still take a hit overall. 
+                        </p>
+                        <p>
+                            Another issue that I resolved surrounding health was the fact players (before we introduced a proper health bar) didn't know they were getting hurt or how hurt they were. Initially the player object was being shrunk, like how a shadow fades in light. Players didn't really notice this much, if they did it too a little. TO help resolve this I added a particle effect and a red tint to the screen when being hurt. The red tint is common in games, red says hurt. So they understood very quickly what was happening. The particle effect helped this even more because it gave the effect of losing mass as light particles came off the player object.
+                        </p>
                     </div>
                 </div>
                 <div class = "quickInfo">
@@ -263,6 +272,12 @@
                         <p>
                             Players alternate between Pirate and Parrot every 30 seconds. As the pirate the players goal is to avoclass traps, and items dropped on them by the opposing player as they platform through the course and try to reach the Treasure first. As the parrot, players attempt to slow down the other player by activating traps on the map and dropping utility items like bear traps and heat seeking coconuts.
                         </p>
+                        <p>
+                            My work on this project was in a few different points. Firstly, Level design and world building. I designed a level for the game that featured 2 core paths that would increasingly go upward and cross cross. ON top of that there were minor paths here and there to create shortcuts for the bold, or to avoid the hindered paths ahead. (Hindered by the actions of the other player). While this level was not fleshed out by the end of our available time, I did also do all the worldbuilding of the level that was finalized. I used the various props we had to change the lanes of platforms into a more vivid game world. I am a firm believer that the minor details of something help bring out the best in it- and I feel these details brought out the life in the game world.  
+                        </p>
+                        <p>
+                            Secondly, I worked on the UI, specifically the HUD and minor functionality tweaks for the Pause menu. The HUD has a few key features, which are all reiterated in another way in order to reinforce the same information more naturally, and/or expand upon it. These parts are the distance to goal tracker, active trap indicator, and timer for next role switch. Players need to know where the other players racer is at a given time in order to put traps near them, and generally keep track of who is in the lead of how much distance is between them. For this reason the distance to goal tracker exists, it shows the players location on a scale of a point from start to finish. This is reinforced by a glowing beam a players parrot can call forth to get that same information in the actual levels space; this expands on the distance bar on the HUD because it gives the 3D location not just distance traveled between start and end in a 2D fashion. Next, the active trap indicator shows which trap a players parrot has enabled (ie Bear Trap, Lantern, or Coconut), a simple icon shows which one is active and a radial overlay shows the cooldown time until a player can sue their ability again. This is reiterated underneath the parrot itself with the physical model that will be dropped. Finally, the phase timer is shown in the exact middle of the screen, it allows players know how much time they have to make a daring play for a further platform or set a trap for the other player. Whats really important for that is the few seconds leading up to the switch, so on the HUD bar itself during the last 5 seconds the timer goes red to pronounce this. Players had an issue with the shock of the phase change, even with the timer. To resolve this I created a semi-transparent overlay for the players screens that also showed the last 5 second countdown in a large font. Something very noticable. This seemed to work wonderfully, as players no longer were shocked by the change but expected it, and supported the tension of those last few moments in a phase.
+                        </p>
                         
                     </div>
                 </div>
@@ -274,6 +289,12 @@
                             <a target="_blank" href="https://github.com/jayshuart/Blackbeard"> 
                                 <img src = "assets/Icons/githubLogo.png" alt = "GitHub Logo">
                                 <span>Github</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a target="_blank" href="https://youtu.be/yO73-j-0nSk?t=2">
+                                <img src="assets/Icons/quickBar_video.png" alt = "video link">
+                                <span>Gameplay Video</span>
                             </a>
                         </li>
                     </ul>
@@ -651,9 +672,6 @@
 		<footer>
 			<p>
 				<a href="index.html">home</a> > 
-			</p>
-			<p>
-			website last updated: <!--#echo var="LAST_MODIFIED"-->
 			</p>
 			<!--#include file="pages/includes/statcounter.shtml"-->
 		</footer>
