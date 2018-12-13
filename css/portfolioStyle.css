@@ -308,26 +308,21 @@ body
 /* SKILLS PAGE */
 .skill
 {
-    width: 250px;
-    height:250px;
     
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     margin-top: 20px;
     
-    display: inline-block;
     
-    position: relative;
-    left: 20px;
 }
 
 .skill img
 {
-    width: 90%;
-    height 90%;
-    
-    
+    display: inline-block;
+    padding: 5px;
+    width: 30%;
+    height: 30%;
 }
 
 footer
