@@ -210,6 +210,7 @@ body
     position: relative;
     top: -25px;
     left: -10px;
+    z-index: 3;
 }
 
 .textBlock
@@ -326,6 +327,15 @@ body
     width: 90%;
     height 90%;
     
+    
+}
+
+footer
+{
+    color: #00678f;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
