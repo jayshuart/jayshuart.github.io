@@ -313,6 +313,8 @@ body
     margin-right: auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    width: calc((163px) * 4);
+    align-content: middle;
     
     
 }
@@ -321,16 +323,13 @@ body
 {
     display: inline-block;
     padding: 5px;
-    width: 30%;
-    height: 30%;
+    width: 150px;
+    height: 150px;
 }
-
 footer
 {
     color: #00678f;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align:center;
     
 }
 
