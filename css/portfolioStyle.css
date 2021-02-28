@@ -239,6 +239,11 @@ body
     overflow-y: auto;
 }
 
+.textBlock a
+{
+    color: white;
+}
+
 .smallIcon
 {
     list-style: none;
