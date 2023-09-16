@@ -68,14 +68,28 @@
                              Made in Phaser 3 for html5.
                         </p>
                         <p>
-                            This game had a few core components, firstly the path finding system, where Peppa follows open paths. 
+                            This game had a few core components, firstly the path finding system, where Peppa follows open paths that the player has created. 
+                            Players can create paths by dragging in and placing tiles. 
+                            After play is hit, peppa will follow the path to the end, reacting appropriately to peppas hidden friend, dead ends, and empty hiding spots. 
                             The in-game system is more robust than the final use, as early iterations had more flexible levels. 
+                            Originally, the game supported tiles wrapping paths back onto each, instead of the strict dead ends. 
+                            This old version had to handle for loops, multiple open paths from a single tile, and the general lack of direction- 
+                            peppas path finding just had to figure it out! The final form, while less robust, is way more clear for players (young children) .
+                        </p>
+                        <p>
                             Secondly, to help quick iteration on designing levels, I built a level importer system that took simple xml files. 
-                            So that team members could edit level layouts in a simple spreadsheet and could be quickly played ingame. 
+                            So that team members could edit level layouts in a simple spreadsheet and could be quickly played in-game. 
+                            This allowed us to not only easily map out levels, but do quick changes with minimal if any impact to engine code. 
+                            It also opens a very easy avenue for new levels in the future.
+                        </p>
+                        <p>
                             Lastly, the game has an interesting variety mechanic I built. 
-                            All 15 levels could be in any one of three world styles (Dino Park, Fall, and Beach) where a level 
-                            could have one of multiple Hiding Spot types (ex: under a table or behind a dinosaur) along with a mixture of of multiple 
-                            distractor hiding spots, an path blockers styled like points of interest and general environmental art.
+                            All 15 levels could be in any one of three world styles (Dino Park, Fall, and Beach) where a level could have one of multiple Hiding Spot types 
+                            (ex: under a table or behind a dino) along with a mixture of of multiple distractor hiding spots, 
+                            and path blockers styled like points of interest and general environmental art. 
+                            There is a random-not-repeat system backing this variety, 
+                            so each time a type of object or theme is selected it is removed from the rng to help ensure the next pull is something new. 
+                            These pools refill at half to keep things fresh.
                         </p>
                         <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fnoggin%2Fvideos%2F778808339835458%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                     </div>
