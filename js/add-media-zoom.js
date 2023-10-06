@@ -1,19 +1,18 @@
+//get all the media from the scroll containers
 const scrolls = document.querySelectorAll('.scroll-container');
-const overlay = document.querySelector('#media-zoom');
-
 let allMedia = [];
 scrolls.forEach(scroll => { 
     allMedia = allMedia.concat([...scroll.children]); 
 });
 
-console.log(allMedia);
-
+//get overlay and give it the exit onclick callback
+const overlay = document.querySelector('#media-zoom');
 overlay.addEventListener('click', function(){
     overlay.style.opacity = 0;
-    //wait until css tranistion finishes before chaning display mode
-    setTimeout(function(){ overlay.style.display = 'none'; }, 350);
+    setTimeout(function(){ overlay.style.display = 'none'; }, 350); //wait until css tranistion finishes before chaning display mode
 });
 
+//give all the media we gathered an onclick callback to make it the overlayed media
 allMedia.forEach(media => {
   media.addEventListener('click', function() {
     //set bg image to our overlay and give it the proper display
