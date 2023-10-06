@@ -383,16 +383,19 @@ body
 .scroll-container img {
     padding: 10px;
     width: 295px;
+    cursor: pointer;
 }
 
 .scroll-container video {
     padding: 10px;
     width: 295px;
+    cursor: pointer;
 }
 
 .scroll-container iframe {
     padding: 10px;
     width: 295px;
+    cursor: pointer;
 }
 
 /* Scrollbar */
@@ -433,6 +436,8 @@ body
 
     opacity: 0;
     transition: opacity .35s;
+
+    cursor: pointer;
   }
   
 
