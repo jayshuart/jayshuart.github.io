@@ -415,6 +415,24 @@ body
     background: #66cdf5;
 }
 
+/* Fullscreen media zoom */
+#media-zoom {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    background-size:contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-origin: content-box;
+  }
+  
+
 /* SKILLS PAGE */
 .skill
 {
