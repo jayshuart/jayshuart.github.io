@@ -129,7 +129,7 @@ body
 /* card profile */
 .card
 {
-    height: 580px;
+    height: 584px;
     width: 100%;
     
     background-color: white;
@@ -150,15 +150,23 @@ body
 .cover
 {
     width: 100%;
-    height: calc(100% - 38px);
+    height: calc(60% - 38px);
     -webkit-filter: blur(2px);
     filter: blur(2px);
     
     padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     
     /* center */
     position: relative;
-    top: -545px;
+    top: -322px;
+}
+
+.no-media-scroll .cover
+{
+    height: calc(100% - 54px) !important;
+    top: -540px !important;
 }
 
 .title
@@ -169,7 +177,7 @@ body
 	text-transform: uppercase;
     
     position: relative;
-    top: -874px;
+    top: -520px;
     z-index: 1;
     
     font-size: 250%;
@@ -180,13 +188,20 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: calc(60% - 38px);
+}
+
+.no-media-scroll .title 
+{
+    height: calc(100% - 54px) !important;
+    top: -865px !important;
 }
 
 .details
 {
     position: relative;
    
-    height: calc(100% - 34px);
+    height: calc(60% - 20px);
     width: 100%;
     z-index: 2;
     
@@ -206,6 +221,11 @@ body
     opacity: 1.0;
 }
 
+.no-media-scroll .details
+{
+    height: calc(100% - 34px) !important;
+}
+
 .details ul
 {
     display: inline-block;
@@ -220,7 +240,7 @@ body
     margin: 0px;
     
     width: 20%;
-    height:60%;
+    height:100%;
     
     position: relative;
     overflow-y: auto;
@@ -236,7 +256,7 @@ body
     display: inline-block;
     float: right;
     width: 80%;
-    height: 60%;
+    height: 100%;
     overflow-y: auto;
 
     font-family: 'Arial';
@@ -281,7 +301,7 @@ body
     background-color: white;
     
     position: relative;
-    top: -660px;
+    top: -694px;
     
     border-top-style: solid;
     border-width: 4px;
@@ -296,6 +316,11 @@ body
     z-index: 3;
     
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.no-media-scroll .quickInfo
+{
+    top: -1131px !important;
 }
 
 .quickInfo ul
@@ -343,9 +368,16 @@ body
 
 .scroll-container {
     background-color: #003d55;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
-    padding: 10px;
+    padding: 8px;
+    height: calc(40% - 16px);
+
+    /* scrollbar-gutter: stable; */
+
+    position: relative;
+    top: -695px;
 }
   
 .scroll-container img {
@@ -354,6 +386,11 @@ body
 }
 
 .scroll-container video {
+    padding: 10px;
+    width: 295px;
+}
+
+.scroll-container iframe {
     padding: 10px;
     width: 295px;
 }
