@@ -20,10 +20,11 @@ allMedia.forEach(media => {
     overlay.innerHTML = "";
 
     let tCopy = media.cloneNode(true);
-    tCopy.style.height = '100vh';
+    tCopy.style.width = '100%';
     tCopy.style.padding = '50px';
-    tCopy.style.paddingLeft = 'auto';
-    tCopy.style.paddingRight = 'auto';
+    tCopy.style.objectFit = "contain";
+    // tCopy.style.paddingLeft = 'auto';
+    // tCopy.style.paddingRight = 'auto';
     overlay.appendChild(tCopy);
     
     //1ms delay so that the opacity css transition takes effect and isnt impacted by the display style change
