@@ -382,19 +382,22 @@ body
   
 .scroll-container img {
     padding: 10px;
-    width: 295px;
+    /* width: 295px;*/
+    height: 100%;
     cursor: pointer;
 }
 
 .scroll-container video {
     padding: 10px;
-    width: 295px;
+    /* width: 295px;*/
+    height: 100%;
     cursor: pointer;
 }
 
 .scroll-container iframe {
     padding: 10px;
-    width: 295px;
+    /* width: 295px;*/
+    height: 100%;
     cursor: pointer;
 }
 
