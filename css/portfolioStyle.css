@@ -151,8 +151,6 @@ body
 {
     width: 100%;
     height: calc(60% - 38px);
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
     
     padding: 10px;
     padding-top: 5px;
@@ -169,17 +167,23 @@ body
     top: -540px !important;
 }
 
+.cover img
+{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    height: 100%;
+    width:  100%;
+}
+
 .title
 {
     color: white;
     opacity: 1.0;
     text-align: center;
-	text-transform: uppercase;
-    
+    text-transform: uppercase;
     position: relative;
-    top: -520px;
+    top: -210px;
     z-index: 1;
-    
     font-size: 250%;
     font-family: Arial;
     
@@ -188,13 +192,13 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: calc(30% - 38px);
+    /* height: calc(30% - 38px); */
 }
 
 .no-media-scroll .title 
 {
     height: calc(100% - 54px) !important;
-    top: -865px !important;
+    top: -315px !important;
 }
 
 .details
@@ -299,28 +303,22 @@ body
 .quickInfo
 {
     background-color: white;
-    
     position: relative;
-    top: -520px;
-    
+    top: -312px;
     border-top-style: solid;
     border-width: 4px;
     border-color: #66cdf5;
-    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
     width: 100%;
     height: 34px;
-    
     z-index: 3;
-    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .no-media-scroll .quickInfo
 {
-    top: -1131px !important;
+    top: -531px !important;
 }
 
 .quickInfo ul
@@ -373,11 +371,11 @@ body
     white-space: nowrap;
     padding: 8px;
     height: calc(40% - 16px);
-
     /* scrollbar-gutter: stable; */
-
+    display: flex;
+    /*justify-content: center;*/
     position: relative;
-    top: -521px;
+    top: -312px;
 }
   
 .scroll-container img {
