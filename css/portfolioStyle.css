@@ -52,6 +52,7 @@ nav ul
     display: block;
     padding-top: 5px;
     padding-bottom: 8px;
+    padding-left: 0px;
 }
 
 nav ul li
@@ -92,13 +93,17 @@ nav ul li a:hover
     border-color: #00678f;
 }
 
-.git
+.logo-link{
+    float: right;
+}
+
+.logo-link a
 {
     position: relative;
     top: -8px;
 }
 
-.gitLogo
+.logo-link img
 {
     width: 23px;
     height: 23px;
@@ -471,10 +476,48 @@ footer
 }
 
 /* MOBILE ==================================================================================================================================================*/
-@media only screen and (max-width: 720px)
+@media only screen and (max-width: 910px)
 {
     .main
     {
         width: 100%
+    }
+
+    nav ul{
+        padding: 0px;
+    }
+
+    nav ul li
+    {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        
+        font-family: Helvetica;
+    }
+
+    nav ul li a{
+        display: block;
+    }
+
+    nav ul li a:hover
+    {
+        background-color: #008abf;
+        border-width: 0px;
+    }
+
+    .logo-link{
+        float:none;
+    }
+
+    .logo-link a{
+        padding-top: 0px;
+        top: 0px;
+    }
+
+    #active{
+        border-bottom-style: none;
+        border-width: 0px;
+        background-color: #00678f;
     }
 }
