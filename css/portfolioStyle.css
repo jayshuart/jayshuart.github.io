@@ -521,3 +521,26 @@ footer
         background-color: #00678f;
     }
 }
+
+@media only screen and (max-width: 800px)
+{
+    .details{
+        overflow-y: scroll;
+    }
+
+    .details ul{
+        float: none;
+        width: 100%;
+        overflow: visible;
+        box-shadow: none;
+        height: fit-content;
+    }
+
+    .textBlock{
+        float: none;
+        width: 100%;
+        overflow: visible;
+        box-shadow: none;
+        height: fit-content;
+    }
+}
