@@ -56,8 +56,14 @@ setImage = function(pImage, pIndex){
 
   //set new image
   let tCopy = pImage.cloneNode(true);
+  if(tCopy instanceof HTMLImageElement){
+    tCopy.src = tCopy.src.replace('/scroll/', '/'); //replace src with fullscale version if possible
+  }
+
   tCopy.style.width = '100%';
   tCopy.style.padding = '30px';
   tCopy.style.objectFit = "contain";
   target.appendChild(tCopy);
+
+  
 };
