@@ -187,16 +187,19 @@ body
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    top: -210px;
+    top: -175px;
     z-index: 1;
     font-size: 250%;
     font-family: Arial;
+    word-wrap: break-word;
     
     
     /* center */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
     /* height: calc(30% - 38px); */
 }
 
