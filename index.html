@@ -54,6 +54,12 @@
 		
         <!-- Projects -->
 		<div class = "main">
+            <form id="searchForm">
+                <input id="searchbar" type="text" name="search" placeholder="Project name, workplace, or technology...">
+                <button type="submit" onclick=onClickSearch()><i>search</i></button>
+            </form>
+                
+
             <div class =  "card">
                 <div class = "details">
                     <ul>
@@ -980,4 +986,5 @@
 	</body>
     <script src="./js/add-media-zoom.js"></script>
     <script src="./js/title-scaler.js"></script>
+    <script src="./js/search-filter.js"></script>
 </html>
