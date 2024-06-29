@@ -27,10 +27,11 @@ function search(pSearchVal){
 
     //check against game title, or workplace
     let tWorkplace = card.querySelector(".workplace span");
-    let tTitle = card.querySelector(".title");
+    if(tWorkplace != null) { tIsMatch = tIsMatch || compare(pSearchVal, tWorkplace.textContent); }
 
-    tIsMatch = compare(pSearchVal, tWorkplace.textContent) || 
-      compare(pSearchVal, tTitle.textContent);
+    let tTitle = card.querySelector(".title");
+    if(tTitle != null) { tIsMatch = tIsMatch || compare(pSearchVal, tTitle.textContent); }
+
 
     //get the list items in this cards details section
     if(!tIsMatch){
