@@ -497,14 +497,14 @@ form#searchForm input[type=text] {
     font-size: 15px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: calc(100% - 80px);
     background: #f1f1f1;
 }
 
 /* Style the submit button */
 form#searchForm button {
     float: left;
-    width: 10%;
+    width: 80px;
     padding: 5px;
     background: #2196F3;
     color: white;
