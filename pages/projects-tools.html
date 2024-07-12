@@ -81,19 +81,13 @@
                     </ul>
                     <div class = "textBlock">
                         <p>
-                            A tool that generates a manifest of a projects assets, along with pertinent details like directory, animations, and skins. This tool helped by allowing 
-                            developers to reference assets in engine without needing to care about the assets actual location. For instance if assets were moved around to a different folder for a 
-                            different loading block engine code references to the asset would not change but the manifest would reflect this. 
+                            A tool that generates a manifest of a projects assets, along with pertinent details like directory, animations, and skins. This tool helped by allowing developers to reference assets in engine without needing to care about the assets actual location. For instance if assets were moved around to a different folder for a different loading block engine code references to the asset would not change but the manifest would reflect this.
                         </p>
                         <p>
-                            This tool was originally developed by a predecessor of mine at WorkinMan, but I worked on fixing existing issues, and updating for new target engine (From Flambe to Phaser). 
-                            This work was done for both windows and ios versions of the application. The work effort involved fixing issues preventing extra details for Spine 
-                            animations from being correctly recorded in the manifest, as well as entirely rewriting and updating the export for the target engines language.
+                            This tool was originally developed by a predecessor of mine at WorkinMan, but I worked on fixing existing issues, and updating for a new target engine (From Flambe to Phaser). This work was done for both windows and ios versions of the application. The work involved fixing issues preventing extra details for Spine animations from being correctly recorded in the manifest, as well as entirely rewriting and updating the export for the target engines language.
                         </p>
                         <p>
-                            I did not know swift at the time of working on this, so I learned on the go to ensure we had parrallel support for our devs working in both windows and ios. The original developer
-                            had long left WorkinMan, and the current maintainer had enough on his plate, so I took over completely on a whim. I was developing out internal phaser wrapper, 
-                            and wanted to make sure it had parrity with our old engine. This included the manifest tools.
+                            I did not know swift at the time of working on this, so I learned on the go to ensure we had parallel support for our devs working in both windows and ios. The original developer had long left WorkinMan, and the current maintainer had enough on his plate, so I took over completely on a whim. I was developing our internal phaser wrapper, and wanted to make sure it had parity with our old engine. This included the manifest tools.
                         </p>
                     </div>
                 </div>
@@ -178,25 +172,13 @@
                     </ul>
                     <div class = "textBlock">
                         <p>
-                            This was an extremely powerful tool. Phaser 3 is a very solid web based game engine, but it lacks any sort of visual editor. 
-                            It allows for live editing of common Game Object properties like Position, Rotation, Scale, Origin, Alpha, and Depth. Other possible properties
-                            were avialable depnding on the type of object being inspected, like a game scene would relay what objects are members of it.
-                            Additionally the inspector tool was built with the ability to monitor or modify any property of the gameobject they want. 
-                            With this developers could add game objects to a scene and visually make adjustments as needed, or inspect objects in a fully 
-                            setup scene to help debug errors.
+                            This was an extremely powerful tool. Phaser 3 is a very solid web based game engine, but it lacks any sort of visual editor. It allows for live editing of common Game Object properties like Position, Rotation, Scale, Origin, Alpha, and Depth. Other possible properties were available depending on the type of object being inspected, like a game scene would relay what objects are members of it. Additionally the inspector tool was built with the ability to monitor or modify any property of the gameobject they want. With this developers could add game objects to a scene and visually make adjustments as needed, or inspect objects in a fully setup scene to help debug errors.
                         </p>
                         <p>
-                            I wanted this tool to be able to exist in a way that interfaced with the phaser engine but was not bound by it. This meant I wanted 
-                            the inspector to be able to reflect information of the target object, and manipulate it, but the window itslef not be bound to the confines of the game window.
-                            So the inspector windows are run-time generated html and css. It creates new dom objects that were designed to be movable overtop the game itself. If a
-                            a user wanted to inspect mutiple objects so be it, they can organize their inspector windows as they need. Furthermore It let the inspectors be flexible to the variety of
-                            games and devices they could be used on- never in the way of game content.
+                            I wanted this tool to be able to exist in a way that interfaced with the phaser engine but was not bound by it. This meant I wanted the inspector to be able to reflect information of the target object, and manipulate it, but the window itself not be bound to the confines of the game window. So the inspector windows are run-time generated html and css. It creates new dom objects that were designed to be movable overtop the game itself. If a user wants to inspect multiple objects, so be it, they can organize their inspector windows as they need. Furthermore It let the inspectors be flexible to the variety of games and devices they could be used on- never in the way of game content.
                         </p>
                         <p>
-                            This tool has probably been the most helpful one I have ever developed. It has resolved numerous bugs by revealing key bits of information about what was
-                            happening that would not have been easily recognizable without visual confrimation. On top of debugging it also has proven itsle fincredibly useful for 
-                            setting up game scenes. It really cuts down on development time positioning objects when you can adjusted them by hand instead of having to guess, edit code, 
-                            and rebuild repeatedly. 
+                            This tool has probably been the most helpful one I have ever developed. It has resolved numerous bugs by revealing key bits of information about what was happening that would not have been easily recognizable without visual confirmation. On top of debugging it also has proven itself incredibly useful for setting up game scenes. It really cuts down on development time positioning objects when you can adjust them by hand instead of having to guess, edit code, and rebuild repeatedly.
                         </p>
                     </div>
                 </div>
@@ -260,7 +242,7 @@
                         <p>
                             The most interesting hurdle was figuring out how to load in spines from the browser. Normally assets are available within the files of the phaser project. 
                             This one however, I needed to add them to the project, load, and make use of the spine files on the fly. 
-                            This meant adding outside files to the project, converting them to useable formats by thr browser and linking these to in engine asset caches.
+                            This meant adding outside files to the project, converting them to useable formats by the browser and linking these to in engine asset caches.
                         </p>
                     </div>
                 </div>
