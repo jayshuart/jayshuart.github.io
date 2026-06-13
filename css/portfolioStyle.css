@@ -543,19 +543,35 @@ form#searchForm::after {
     margin-right: auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: calc((163px) * 4);
+    max-width: calc((150px + 40px) * 6);
     align-content: middle;
     
     
 }
 
+.skill .skillIcon
+{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin: 40px 25px;
+}
+
+.skill p
+{
+    font-family: Helvetica;
+    font-size: 23px;
+    color: #00678f;
+    text-align: center;
+}
+
 .skill img
 {
     display: inline-block;
-    padding: 5px;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
+
 footer
 {
     color: #00678f;
